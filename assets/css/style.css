@@ -60,8 +60,7 @@ header nav {
   }
 
   .about p {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding: 10px;
       text-align: center;
   }
 
@@ -80,8 +79,7 @@ header nav {
   }
 
   .work p {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding: 10px;
       font-style: italic;
       font-weight: bold;
       text-align: center;
@@ -122,6 +120,18 @@ header nav {
     height: 250px;
 }
 
+.resume-references h3 {
+    text-align: center;
+    border-bottom: 1.5px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.resume-references p {
+    text-align: center;
+    padding: 10px;
+}
+
   footer {
     padding: 20px 35px;
     background-color: var(--tertiary-color);
@@ -152,3 +162,9 @@ footer ul li a {
     color: white;
     text-decoration: none;
 }
+
+@media screen and (max-width: 980px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 575px) {}
