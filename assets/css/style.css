@@ -1,9 +1,4 @@
-:root {
-    --dark-blue: rgb(0, 0, 80)
-}
-
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,14 +6,9 @@
 
 header {
 padding: 20px 35px;
-background-color: var(--tertiary-color);
 display: flex;
 justify-content: space-between;
-flex-wrap: wrap;
-position: sticky;
-position: -webkit-sticky;
 top: 0;
-background-color: var(--dark-blue);
 }
 
 header h1 {
@@ -30,6 +20,7 @@ header h1 {
 header h1 a {
     color: white;
     text-decoration: none;
+    
 }
 
 header a {
@@ -51,23 +42,50 @@ header nav {
   header nav ul li a {
     padding: 10px 15px;
     color: white;
+    font-size: 18px;
   }
 
-  .about h3 { 
+  header nav ul li a:hover {
+      color: blue;
+      font-style: italic;
+      font-weight: bold;
+  }
+
+  .about-header { 
+    color: white;
     text-align: center;
-    border-bottom: 1.5px solid black;
+    border-bottom: 1.5px solid white;
     padding-top: 20px;
+    font-size: 22px;
+  }
+
+  .about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .about img {
+      height: auto;
+      max-height: 400px;
+      width: auto;
+      max-width: 250px;
+      border-radius: 85%;
+      padding: 10px;
   }
 
   .about p {
+      color: white;
+      font-size: 18px;
       padding: 10px;
-      text-align: center;
   }
 
   .work-heading {
+      color: white;
       text-align: center;
-      border-bottom: 1.5px solid black;
-      padding-top: 10px;
+      border-bottom: 1.5px solid white;
+      padding-top: 20px;
+      font-size: 22px;
   }
 
   .work {
@@ -83,88 +101,211 @@ header nav {
       font-style: italic;
       font-weight: bold;
       text-align: center;
+      font-size: 18px;
   }
-  
+
   .work p a {
       text-decoration: none;
-      color: black;
+      color: white;
       justify-content: center;
   }
 
+  .work p a:hover {
+      color: blue;
+  }
+
   .run-buddy {
-    margin: 20px;
-    flex: 1;
+    margin: 10px;
   }
 
   .run-buddy img {
-      width: 400px;
-      height: 250px;
+      width: 60%;
+      height: auto;
+      border-radius: 10px;
   }
 .pending-1 {
-    margin: 20px;
-    flex: 1;
+    margin: 10px;
+    flex: 3;
 }
 
 .pending-1 img {
-    width: 400px;
-    height: 250px;
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .pending-2 {
-    margin: 20px;
-    flex: 1;
+    margin: 10px;
+    flex: 3;
 }
 
 .pending-2 img {
-    width: 400px;
-    height: 250px;
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.resume-references h3 {
+.resume-header {
+    color: white;
     text-align: center;
-    border-bottom: 1.5px solid black;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border-bottom: 1.5px solid white;
+    padding: 20px;
+    font-size: 22px;
 }
 
-.resume-references p {
-    text-align: center;
+.resume-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume-text {
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    text-align: right;
+}
+
+.resume-section img {
+    color: white;
+    height: auto;
+    max-height: 400px;
+    width: auto;
+    max-width: 250px;
     padding: 10px;
 }
 
   footer {
     padding: 20px 35px;
-    background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     top: 0;
-    background-color: var(--dark-blue);  
   }
 
   footer h2 {
+      color: white;
     font-weight: bold;
     font-size: 36px;
-    color: white;
 }
 
 footer ul {
+    color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    color: white;
+    font-size: 18px;
 }
 
 footer ul li a {
     padding: 10px 25px;
-    color: white;
     text-decoration: none;
+    color: white;
+    font-size: 18px;
 }
 
-@media screen and (max-width: 980px) {}
+footer ul li a:hover {
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 575px) {
 
-@media screen and (max-width: 575px) {}
+    header {
+        padding: 10px 20px;
+        display: flex;
+        }
+
+    header h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    header nav {
+        margin: 3px 0;
+      }
+
+      header nav ul li a {
+        padding: 0 10px;
+        color: white;
+        font-size: 16px;
+      }
+
+      .about-header { 
+        color: white;
+        text-align: center;
+        border-bottom: 1.5px solid white;
+        padding-top: 10px;
+        font-size: 20px;
+      }
+
+      .about p {
+        color: white;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .work-heading {
+        color: white;
+        text-align: center;
+        border-bottom: 1.5px solid white;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .work p {
+        padding: 10px;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .resume-header {
+        color: white;
+        text-align: center;
+        border-bottom: 1.5px solid white;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .resume-text {
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        text-align: right;
+    }
+
+    footer {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        top: 0;
+      }
+    
+      footer h2 {
+          color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    footer ul {
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style: none;
+        font-size: 16px;
+    }
+    
+    footer ul li a {
+        padding: 0 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+}
