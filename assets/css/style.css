@@ -123,12 +123,12 @@ header nav {
       height: auto;
       border-radius: 10px;
   }
-.pending-1 {
+.food-finder {
     margin: 10px;
     flex: 3;
 }
 
-.pending-1 img {
+.food-finder img {
     width: 40%;
     height: auto;
     border-radius: 10px;
